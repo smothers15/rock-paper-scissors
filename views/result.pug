@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    div.card-container
+        div.car Player Choice
+            img(src=`/images/rock-paper-scissors-icon-${playerChoice}.jpg`)
+
+        p vs
+        div.car PC Choice
+            img(src=`/images/rock-paper-scissors-icon-${pcChoice}.jpg`)
+
+    h3 Winner: #{winner}
+
+    a(href='/') Play Again
